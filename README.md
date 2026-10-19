@@ -76,14 +76,28 @@ The video is included in the repository so the complete scene can be downloaded 
 
 ## Quick Start
 
-### 1. Start the Backend Simulation Engine
+### One-click launcher (Windows)
+
+From the project folder, double-click [`start-armageddon.bat`](start-armageddon.bat). The script opens the backend and frontend in separate terminal windows and checks that the required local dependencies are available.
+
+When the launcher finishes, open:
+
+- Website: `http://localhost:5173`
+- Backend API: `http://localhost:8000`
+- API documentation: `http://localhost:8000/docs`
+
+Keep both terminal windows open while using the website. Close them to stop the development services.
+
+### Manual startup
+
+#### 1. Start the Backend Simulation Engine
 ```powershell
 cd backend
 .\.venv\Scripts\uvicorn app.main:app --port 8000 --reload
 ```
 The FastAPI server will be running on `http://localhost:8000`.
 
-### 2. Start the Frontend CIC Command Center
+#### 2. Start the Frontend CIC Command Center
 ```powershell
 cd frontend
 npm run dev
