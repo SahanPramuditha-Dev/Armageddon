@@ -4,6 +4,34 @@ A cinematic, interactive naval combat and global defense simulation inspired by 
 
 ---
 
+## Sentinel Scene Showcase
+
+This Sentinel boat and helicopter scene was developed over approximately one month, with a focus on cinematic composition, real-time 3D rendering, lighting, camera movement, ocean atmosphere, and interactive naval visualization.
+
+### Screenshots
+
+![Sentinel boat and helicopter scene](docs/media/sentinel-scene.png)
+
+![ARMAGEDDON command center](docs/media/command-center.png)
+
+### Video
+
+[Watch the Sentinel boat and helicopter scene](docs/media/sentinel-view.mp4)
+
+The video is included in the repository so the complete scene can be downloaded and viewed locally.
+
+## Technology Stack
+
+- **React 19 and TypeScript** — component-based interface development with type safety.
+- **Three.js, React Three Fiber, and React Three Drei** — real-time browser-based 3D scenes, models, cameras, lighting, animation, and reusable helpers.
+- **WebGL** — hardware-accelerated rendering for the interactive ocean and naval environments.
+- **Vite** — fast local development and optimized frontend builds.
+- **Zustand** — lightweight state management for tactical and simulation state.
+- **FastAPI and Python** — authoritative simulation engine and REST API.
+- **WebSockets** — real-time communication between the simulation backend and command center.
+- **SQLAlchemy and SQLite** — persistence for local simulation data.
+- **Pytest** — automated validation of combat, harbor, weapon, countermeasure, and sensor systems.
+
 ## Key Features
 
 1. **Authoritative Server-Side Combat Engine**:
